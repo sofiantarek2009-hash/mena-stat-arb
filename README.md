@@ -15,4 +15,4 @@ The pipeline utilizes a dynamic Z-Score thresholding model:
 3. Computes a real-time **Z-Score** ($Z = \frac{Price - SMA}{\sigma}$).
 4. Flags statistical anomalies when $Z > 2.0$ or $Z < -2.0$.
 
-*Architected by Sofian.*
+*Built by Sofian Mousa.*
