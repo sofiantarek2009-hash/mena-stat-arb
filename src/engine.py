@@ -63,11 +63,11 @@ class EmergingMarketStatArb:
         print("="*55 + "\n")
 
 if __name__ == "__main__":
-    # Target: Commercial International Bank Egypt (EGX)
-    target_asset = "COMI.CA"
+    # Target: VanEck Egypt Index ETF (Proxy for EGX Volatility)
+    target_asset = "EGPT"
     
     # Initialize the Engine
     bot = EmergingMarketStatArb(ticker=target_asset, window=20, z_threshold=2.0)
-    bot.load_data(start_date="2023-01-01", end_date="2024-03-01")
+    bot.load_data(start_date="2022-01-01", end_date="2024-01-01")
     bot.compute_vectors()
     bot.output_anomalies()
