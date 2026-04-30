@@ -46,6 +46,7 @@ def run_backtest(ticker, start, end):
     
     print(f'[*] Final Capital: ${final_capital:.2f} USD')
     print(f'[*] Net ROI: {roi:.2f}% (After Friction)')
+    print(f'(*) Simulation: Completed)
     
     # Render the proof
     cerebro.plot()
